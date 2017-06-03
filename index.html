@@ -15,12 +15,7 @@
         <input class="form-control" placeholder="Search Name" ng-model="searchTerm.name">
         <input class="form-control" placeholder="Search State" ng-model="searchTerm.location.state">
 
-        <select class="input-medium" ng-model="sortProp">
-          <option value="name">Name</option>
-          <option value="friend_count">#Friends</option>
-          <option value="location.city">City</option>
-          <option value="location.state">State</option>
-          <option value="location.country">Country</option>
+        <select class="input-medium" ng-model="sortProp" ng-options="option.value as option.optSelection for option in options">
         </select>
 
         <select class="input-medium" ng-model="sortDirection">
